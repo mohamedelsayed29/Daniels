@@ -1,0 +1,404 @@
+/* global css */
+
+body{
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+
+}
+.section-padding {
+    padding: 100px 0;
+}
+.head-sec{
+    font-weight: 900;
+    font-size: 40px;
+    color:  rgb(52, 52, 52);
+}
+/* navbar */
+nav .nav-link{
+    color: #ffffff;
+    padding: 20px 10px 10px;
+}
+nav .nav-link:hover{
+    color: white;
+}
+.nav-link{
+    color: #fff;
+    position: relative;
+}
+.nav-link::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position:absolute;
+    bottom: 0px;
+    left: 10px;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+
+.nav-link:hover::after{
+    width: 60%;
+    height: 2px;
+}
+
+.nav-link:hover{
+    color: #fff;
+}
+.active{
+    color: #fff!important;
+}
+
+/* Home */
+header{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+li{
+    list-style: none;
+    color: #ffffff;
+}
+ #home ul li {
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.typingClass::after{
+    content: "";
+    animation-name: typingskill;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes typingskill{
+    1%{content: "|";}
+    3%{content: "D|";}
+    5%{content: "De|";}
+    7%{content: "Dev|";}
+    9%{content: "Deve|";}
+    11%{content: "Devel|";}
+    13%{content: "Develo|";}
+    15%{content: "Develop|";}
+    17%{content: "Develope|";}
+    25%{content: "Developer|";}
+    27%{content: "Develope|";}
+    29%{content: "Develop|";}
+    31%{content: "Develo|";}
+    32%{content: "Devel|";}
+    34%{content: "Deve|";}
+    36%{content: "Dev|";}
+    38%{content: "De|";}
+    40%{content: "D|";}
+    41%{content: "|";}
+
+    41%{content: "|";}
+    42%{content: "D|";}
+    44%{content: "De|";}
+    46%{content: "Des|";}
+    48%{content: "Desi|";}
+    50%{content: "Desig|";}
+    52%{content: "Design|";}
+    54%{content: "Designe|";}
+    63%{content: "Designer|";}
+    65%{content: "Designe|";}
+    67%{content: "Design|";}
+    69%{content: "Desig|";}
+    70%{content: "Desi|";}
+    72%{content: "Des|";}
+    74%{content: "De|";}
+    76%{content: "D|";}
+    76%{content: "|";}
+
+    77%{content: "|";}
+    77%{content: "L|";}
+    79%{content: "La|";}
+    81%{content: "Lar|";}
+    83%{content: "Larr|";}
+    85%{content: "Larry |";}
+    87%{content: "Larry D|";}
+    89%{content: "Larry Da|";}
+    90%{content: "Larry Dan|";}
+    92%{content: "Larry Dani|";}
+    94%{content: "Larry Danie|";}
+    96%{content: "Larry Daniel|";}
+    98%{content: "Larry Daniels|";}
+    100%{content: "Larry Daniel|";}
+    108%{content: "Larry Danie|";}
+    110%{content: "Larry Dani|";}
+    112%{content: "Larry Dan|";}
+    114%{content: "Larry Da|";}
+    116%{content: "Larry D|";}
+    118%{content: "Larry|";}
+    120%{content: "Larr|";}
+    122%{content: "Lar|";}
+    124%{content: "La|";}
+    126%{content: "L|";}
+    128%{content: "|";}
+}
+
+/* About */
+.about .about-img {
+    padding: 0 0 0 50px;
+    position: relative;
+}
+  .about .about-img:after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+  .about .content h3 {
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+  .about .content .info {
+    color: rgb(116, 129, 130);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.about .content .font-color{
+    color: rgb(116, 129, 130);
+}
+.about .progress{
+    height: 23px;
+    
+}
+.about-btn1{
+    background-color: #000000;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .3s background-color;
+}
+.about-btn1:hover{
+    background-color: transparent;
+    color: #000000;
+}
+.about-btn2{
+    background-color: transparent;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .3s background-color;
+}
+.about-btn2:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.about .about-content button:hover{
+    background-color: #ec2403;
+
+}
+
+/* End about */
+
+/* Start Portfolio */
+
+.portfolio .nav-link{
+    color: #111;
+    font-weight: bold;
+}
+.portfolio .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: black;
+    border-radius: 30px;
+    padding-inline: 20px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.portfolio .inner{
+    cursor: pointer;
+}
+.portfolio .content{
+    top: 150%;
+    transform: translateY(-50%);
+    transition: all 0.5s;
+    z-index: 99;
+}
+.portfolio .inner:hover .content{
+    top: 50%;
+}
+.portfolio .layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    transition: 0.5s all;
+    }
+.portfolio .inner:hover .layer{
+    opacity: 1;
+}
+
+.portfolio .content li{
+    list-style: none;
+    color: #ffffff;
+}
+.portfolio .content ul li {
+    font-size: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    cursor: pointer;
+}
+/* End Portfolio */
+
+/* Srart Service */
+.services .item {
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.services .item:hover .icon {
+    background: #1c1c1c;
+    color: #eee;
+}
+.services .item{
+    align-items: center;
+}
+.services .item .icon {
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 75px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.services .item h6 {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}
+.services .item p {
+    word-spacing: 2px;
+    font-size: 14px;
+}
+/* End Service */
+
+/* Client */
+#client .carousel-item .p-1{
+    max-width: 700px;
+    margin: auto;
+}
+.data .icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.data h3 {
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.data p {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.carousel-indicatorss [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #90909073;
+    background-clip: padding-box;
+    border-radius: 50%;
+    border:0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    margin-top: 3px;
+}
+/* End Client */
+
+/* OUR TEAM */
+.blog .card-body{
+    border-end-end-radius: 8px; 
+    border-end-start-radius: 8px; 
+}
+/* End Our Team */
+
+/* Contact us */
+.contact .icon {
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+    width: 75px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.contact .icon:hover{
+    color: #fff;
+    background-color: #000000;
+}
+.contact .form-name{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+.contact .message{
+    width: 100%;
+    height: 160px;
+    max-height: 160px;
+    /* max-width: 100%; */
+    background: #f4f4f4;
+}
+.contact textarea{
+    height: 160px;
+    max-height: 160px;
+    width: 202%;
+    background: #f4f4f4;
+    border: 0;
+
+
+}
+
